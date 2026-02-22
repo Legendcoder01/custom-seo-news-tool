@@ -1,0 +1,20 @@
+services:
+  # Represents a Background Worker that runs continuously
+  # Good for cron-like tasks running on a loop using Python
+  - type: worker
+    name: seo-news-worker
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run_cron.py # We'll create this to run in a loop
+    plan: free # Starting with free tier, upgrading later
+    envVars:
+      - key: DATAFORSEO_LOGIN
+        sync: false
+      - key: DATAFORSEO_PASSWORD
+        sync: false
+      - key: SERPSTACK_API_KEY
+        sync: false
+      - key: REDDIT_CLIENT_ID
+        sync: false
+      - key: REDDIT_CLIENT_SECRET
+        sync: false
