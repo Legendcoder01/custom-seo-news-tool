@@ -10,10 +10,16 @@ logger = logging.getLogger(__name__)
 
 # Mocked list of tech news RSS feeds
 MOCK_FEEDS = [
-    "https://techcrunch.com/feed/",
+    "https://technode.com/feed/",
     "https://www.theverge.com/rss/index.xml",
-    "https://hnrss.org/frontpage"
-    # Feel free to add more targeted feeds here
+    "https://hnrss.org/frontpage",
+    "https://www.siasat.com/feed/",
+    "https://www.abplive.com/trending/feed",
+    "https://www.news18.com/commonfeeds/v1/eng/rss/movies.xml",
+    "https://hauterrfly.com/entertainment/feed/",
+    "https://www.hindustantimes.com/feeds/rss/entertainment/rssfeed.xml",
+    "https://www.freepressjournal.in/stories.rss",
+    "https://hindi.newsbytesapp.com/feed"
 ]
 
 def fetch_recent_articles(feeds=MOCK_FEEDS, hours_ago=2):
