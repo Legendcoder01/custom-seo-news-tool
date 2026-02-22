@@ -1,4 +1,4 @@
-newspaper3k==0.2.8
+﻿newspaper3k==0.2.8
 yake==0.4.8
 pytrends==4.9.2
 requests==2.31.0
